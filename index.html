@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
@@ -11,10 +12,10 @@
       <header>
         <h1>AI Scottish Gaelic Poem Generator</h1>
         <main>
-          <form>
+          <form id="poem-generator-form">
             <input
               type="text"
-              placeholder="Enter the topic for your poem"
+              placeholder="Enter the topic of your poem"
               autofocus
               required
               autocomplete="off"
@@ -22,13 +23,7 @@
             />
             <input type="submit" class="submit-button" />
           </form>
-          <div class="poem">
-            The poem will go here
-            <br />
-            Fàilte dhachaigh / Dhan na claisichean / Far an d’fhuaireas
-            <br />
-            -Fàilte - by Màiri NicGumaraid Mary Montgomery
-          </div>
+          <div class="poem" id="poem"></div>
         </main>
       </header>
       <script src="src/index.js"></script>

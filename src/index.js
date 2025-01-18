@@ -21,10 +21,6 @@ function generatePoem(event) {
   poemElement.classList.remove("hidden");
   poemElement.innerHTML = `⏳ Generating a Scottish Gaelic poem about ${instructionsInput.value}, please wait...`;
 
-  console.log("Generating poem...");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
-
   axios.get(apiURL).then(displayPoem);
 }
 

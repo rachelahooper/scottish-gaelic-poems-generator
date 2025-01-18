@@ -15,22 +15,31 @@ h1 {
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
-  color: #272044;
+  color: #225763;
 }
 
 .container {
   margin: 120px auto;
   max-width: 600px;
 }
-form {
-  padding: 30px;
+
+.form-container {
   background-color: white;
+  margin-bottom: 30px;
+  padding: 20px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.8);
   border-radius: 8px;
+}
+form {
   display: flex;
-  margin-bottom: 30px;
 }
 
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 10px;
+}
 .instructions {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
@@ -39,6 +48,9 @@ form {
   border-radius: 50px;
   line-height: 20px;
   color: #272044;
+}
+.hidden {
+  display: none;
 }
 
 .submit-button {

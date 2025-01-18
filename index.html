@@ -13,19 +13,22 @@
       <header>
         <h1>AI Scottish Gaelic Poem Generator</h1>
         <main>
-          <form id="poem-generator-form">
-            <input
-              type="text"
-              placeholder="Enter the topic of your poem"
-              autofocus
-              required
-              autocomplete="off"
-              class="instructions"
-              id="user-instructions"
-            />
-            <input type="submit" class="submit-button" />
-          </form>
-          <div class="poem" id="poem"></div>
+          <div class="form-container">
+            <form id="poem-generator-form">
+              <input
+                type="text"
+                placeholder="Enter a topic for your Scottish Gaelic poem"
+                autofocus
+                required
+                autocomplete="off"
+                class="instructions"
+                id="user-instructions"
+              />
+              <input type="submit" class="submit-button" />
+            </form>
+            <div class="hint">ie, Flower, grasses, sheep</div>
+          </div>
+          <div class="poem hidden" id="poem"></div>
         </main>
       </header>
       <script src="src/index.js"></script>

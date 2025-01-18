@@ -17,6 +17,10 @@ function generatePoem(event) {
   let context = `User Instructions: Generate a Scottish Gaelic poem about ${instructionsInput.value}.You are a talented poet and you love to write short poems that honor a scottish heritage. Your mission is to generate a short four line poem formatted in basic HTML - do NOT start the poem with 'html'. Please include a <br /> between each line, and sign with 'SheCodes AI' inside a <strong> element.Make sure to follow the user instructions`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `⏳ Generating a Scottish Gaelic poem about ${instructionsInput.value}, please wait...`;
+
   console.log("Generating poem...");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
